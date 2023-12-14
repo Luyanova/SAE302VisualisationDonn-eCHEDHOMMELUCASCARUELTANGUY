@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <title>Chart.js</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <span class="logo">VisualData</span>
+    <h1>Filtres</h1>
+
+    <select name="selection" id="selection">
+      <option value="family">Famille</option>
+      <option value="solver">Solveur</option>
+    </select>
+
+    <div class="chips">
+
+
+
+    </div>
+
+    <h2>Selectionner un solver à comparer</h2>
+    <div class="solver-button">
+      <button value="ace" id="ace">Ace</button>
+      <button value="choco" id="choco">Choco</button>
+      <button value="picat" id="picat">Picat</button>
+      <button value="btd" id="btd">Btd</button>
+      <button value="cosoco" id="cosoco">Cosoco</button>
+      <button value="funscopcad" id="funscopcad">Fun-sCOP-cad</button>
+      <button value="funscopglue" id="funscopglue">Fun-sCOP-glue</button>
+      <button value="mistral" id="mistral">Mistral</button>
+      <button value="sat4jcp" id="sat4jcp">Sat4j-cp</button>
+      <button value="sat4jrs" id="sat4jrs">Sat4j-rs</button>
+  </div>
+
+
+  </div>
+
+
+  <main>
+    <div class="container">
+      <div class="chart-container">
+        <!-- <div style="width: 500px;"><canvas id="dimensions"></canvas></div><br/> -->
+        <div style="width: 800px;"><canvas id="acquisitions"></canvas></div>
+
+        <div style="width: 800px;"><canvas id="acquisition2"></canvas></div>
+
+        <!-- <script type="module" src="dimensions.js"></script> -->
+      </div>
+    </div>
+
+
+    <div>
+      <h1 class="pourcentage"></h1>
+
+      
+      <div class="containerpourcentage">
+          <canvas id="canvaspourcentage"></canvas>
+      </div>
+  </div>
+
+</main>
+    <script src="sae.js"></script>
+    <script src="selection.js"></script>
+    <script type="module" src="acquisitions.js"></script>
+    <script type="module" src="pourcentage.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
